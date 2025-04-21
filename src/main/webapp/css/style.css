@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+:root {
+    --color1: #424B54;
+    --color2: #B38D97;
+    --color3: #D5ACA9;
+    --color4: #EBCFB2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "DM Serif Text", serif;
+}
+
+body {
+    background: var(--color1);
+}
+
+nav {
+    background: var(--color3);
+}
+
+#title-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    background-color: var(--color2);
+    border-radius: 3px;
+}
+
+.btn {
+    color: #fff;
+    background: var(--color3);
+    text-shadow: 0px 0px 4px #000;
+}
+
+.btn:hover {
+    background: var(--color4);
+}
+
+a.menu {
+    display: block;
+    margin-top: 40px;
+    padding: 10px;
+    font-size: 1.3rem;
+}
+
+.borde {
+    border: #fff 2px solid;
+}
+
+.col-opciones,
+.col-small {
+    width: 10%;
+}
+
+.col-mid {
+    width: 20%;
+}
+
+.col-opciones>a {
+    color: var(--color3);
+    transition: color 0.15s ease-in-out;
+}
+
+.col-opciones>a:hover {
+    color: var(--color4);
+}
+
+.alinear td {
+    vertical-align: middle;
+}
