@@ -88,23 +88,25 @@ public class ProcesarEstudianteServlet extends HttpServlet {
             out.println("<meta charset=\"UTF-8\">");
             out.println("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">");
             out.println("<title>Resultado Registro Estudiante</title>");
-            out.println("<style>");
-            out.println("  body { font-family: sans-serif; margin: 20px; }");
-            out.println("  table { border-collapse: collapse; width: 60%; margin-top: 20px; }");
-            out.println("  th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }");
-            out.println("  th { background-color: #f2f2f2; }");
-            out.println("  .errores { color: red; border: 1px solid red; padding: 10px; margin-bottom: 20px; background-color: #ffebeb; }");
-            out.println("  .errores ul { margin: 0; padding-left: 20px; }");
-            out.println("  a { display: inline-block; margin-top: 15px; text-decoration: none; color: blue; }");
-            out.println("</style>");
+            out.println("<link rel=\"stylesheet\" href=\"css/bootstrap.css\">");
+            out.println("<link rel=\"stylesheet\" href=\"css/style.css\">");
+            out.println("<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js\"></script>");
             out.println("</head>");
             out.println("<body>");
+            out.println("<nav class=\"container-fluid\">");
+            out.println("<h1 class=\"text-center display-1 p-3\"><a href=\"index.jsp\" id=\"title-link\">Guía de ejercicios 2</a></h1>");
+            out.println("</nav>");
+            out.println("<main class=\"container my-5 p-5\">");
 
             if (errores.isEmpty()) {
                 // No hay errores, mostrar tabla con datos
-                out.println("<h1>Datos del Estudiante Registrado</h1>");
-                out.println("<table>");
+                out.println("<h2 class=\"display-6 text-center mb-4\">Datos del Estudiante Registrado</h2>");
+                out.println("<div class=\"table-responsive\">");
+                out.println("<table class=\"table table-dark table-bordered table-striped table-hover borde\">");
+                out.println("<thead class=\"table-dark\">");
                 out.println("  <tr><th>Campo</th><th>Valor</th></tr>");
+                out.println("</thead>");
+                out.println("<tbody>");
                 out.println("  <tr><td>Carnet</td><td>" + escapeHtml(carnet) + "</td></tr>");
                 out.println("  <tr><td>Nombres</td><td>" + escapeHtml(nombres) + "</td></tr>");
                 out.println("  <tr><td>Apellidos</td><td>" + escapeHtml(apellidos) + "</td></tr>");
@@ -112,7 +114,9 @@ public class ProcesarEstudianteServlet extends HttpServlet {
                 out.println("  <tr><td>Teléfono</td><td>" + escapeHtml(telefono) + "</td></tr>");
                 out.println("  <tr><td>E-mail</td><td>" + escapeHtml(email) + "</td></tr>");
                 out.println("  <tr><td>Fecha Nacimiento</td><td>" + escapeHtml(fechaNacimientoStr) + "</td></tr>");
+                out.println("</tbody>");
                 out.println("</table>");
+                out.println("</div>");
             } else {
                 // Hay errores, mostrar lista de errores
                 out.println("<h1>Error al Procesar la Información</h1>");
@@ -131,6 +135,7 @@ public class ProcesarEstudianteServlet extends HttpServlet {
                  // out.println("<a href=\"javascript:history.back()\">Volver al Formulario</a>");
             }
 
+            out.println("</main>");
             out.println("</body>");
             out.println("</html>");
         }
