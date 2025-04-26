@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
 
 :root {
-    --color1: #424B54;
+    --color1: #2c2e34;
     --color2: #B38D97;
     --color3: #D5ACA9;
     --color4: #EBCFB2;
@@ -10,7 +10,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "DM Serif Text", serif;
+    font-family: "Parkinsans", sans-serif;
 }
 
 body {

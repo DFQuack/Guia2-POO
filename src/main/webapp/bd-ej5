@@ -1,0 +1,32 @@
+CREATE DATABASE car_clean;
+CREATE TABLE cliente (
+    id int PRIMARY KEY AUTO_INCREMENT,
+    nombres varchar(50),
+    apellidos varchar(50),
+    vip boolean
+);
+CREATE TABLE automotor (
+    id int PRIMARY KEY AUTO_INCREMENT,
+    marca varchar(20),
+    modelo varchar(50),
+    año year
+);
+CREATE TABLE servicio (
+    id_cliente int,
+    id_auto int,
+    tipo varchar(20),
+    precio double,
+    CONSTRAINT pk_servicio PRIMARY KEY (id_cliente, id_auto),
+    CONSTRAINT fk_cliente FOREIGN KEY (id_cliente) REFERENCES cliente(id) ON DELETE CASCADE,
+    CONSTRAINT fk_auto FOREIGN KEY (id_auto) REFERENCES automotor(id) ON DELETE CASCADE
+);
+
+INSERT INTO cliente
+VALUES (1,'Daniel Enrique','Flores Lino',0),
+       (2,'María','Martínez',1);
+INSERT INTO automotor
+VALUES (1,'Kia','Soul','2020'),
+       (2,'Toyota','Hilux','2016');
+INSERT INTO servicio
+VALUES (1,1,'Sedán',3.50),
+       (2,2,'Autobús',5.95);
