@@ -16,6 +16,14 @@
 <main class="container my-5 p-5">
     <h2 class="display-6 text-center mb-4">Registrar servicio</h2>
 
+    <%
+        String error = "";
+        if (request.getAttribute("error") != null) {
+            error = (String) request.getAttribute("error");
+        }
+    %>
+    <p class="bg-danger text-center"><%= error %></p>
+
     <form action="CarCleanServlet" method="post" class="container px-5">
         <div class="form-floating mb-3">
             <input type="text" class="form-control bg-dark text-light" name="nombres" id="nombres" placeholder="a">
@@ -26,7 +34,7 @@
             <label for="apellidos">Apellidos</label>
         </div>
         <div class="mb-3">
-            <input type="checkbox" class="form-check-input" id="vip" name="vip">
+            <input type="checkbox" class="form-check-input" id="vip" name="vip" value="true">
             <label class="form-check-label" for="vip">¿Es VIP?</label>
         </div>
         <div class="form-floating mb-3">
@@ -38,7 +46,7 @@
             <label for="modelo">Modelo del auto</label>
         </div>
         <div class="form-floating mb-3">
-            <input type="number" class="form-control bg-dark text-light" name="año" id="año" placeholder="a" min="1990" step="1">
+            <input type="number" class="form-control bg-dark text-light" name="año" id="año" placeholder="a" step="1">
             <label for="año">Año del auto</label>
         </div>
         <div class="form-floating mb-3">

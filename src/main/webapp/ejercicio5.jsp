@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
-<%@ page import="sv.edu.udb.alumno.guia2poo.Conexion" %>
+<%@ page import="sv.edu.udb.alumno.guia2poo.carclean.Conexion" %>
 <%@ page import="java.sql.Connection" %>
 <%@ page import="java.sql.ResultSet" %>
 <%@ page import="java.sql.SQLException" %>

@@ -1,4 +1,4 @@
-package sv.edu.udb.alumno.guia2poo;
+package sv.edu.udb.alumno.guia2poo.carclean;
 import java.sql.*;
 
 public class Conexion {
