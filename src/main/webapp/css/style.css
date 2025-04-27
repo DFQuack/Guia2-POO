@@ -64,3 +64,70 @@ a.menu {
     border-color: var(--color3);
     box-shadow: 0 0 0 0.25rem var(--color4);
 }
+
+#container {
+    background-color: var(--color2);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+#datosIngresados, #estadisticas, #rangosPorAno {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+#tablaDatos, #tablaEstadisticas {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+#tablaDatos th, #tablaEstadisticas th,
+#tablaDatos td, #tablaEstadisticas td {
+    padding: 10px;
+    border: 2px solid #fff;
+    text-align: center;
+    color: #fff; /* Texto blanco */
+}
+
+#tablaDatos th, #tablaEstadisticas th {
+    background-color: var(--color3); /* Fondo de cabecera */
+    color: #fff; /* Texto blanco en la cabecera */
+}
+
+#tablaDatos tr:nth-child(even), #tablaEstadisticas tr:nth-child(even) {
+    background-color: #2f3b44; /* Gris oscuro para filas pares */
+}
+
+#tablaDatos tr:nth-child(odd), #tablaEstadisticas tr:nth-child(odd) {
+    background-color: #3a4a55; /* Gris más oscuro para filas impares */
+}
+
+#tablaDatos td, #tablaEstadisticas td {
+    text-align: center;
+}
+
+
+#registrarOtro {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--color3);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+#registrarOtro:hover {
+    background: var(--color4);
+    text-decoration: underline;
+}
+
+#rango1, #rango2 {
+    margin-bottom: 10px;
+}
