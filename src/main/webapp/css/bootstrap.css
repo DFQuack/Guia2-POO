@@ -2125,9 +2125,7 @@ progress {
 .form-control:focus {
   color: var(--bs-body-color);
   background-color: var(--bs-body-bg);
-  border-color: #16cbf8;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(148, 250, 255, 0.5);
 }
 .form-control::-webkit-date-and-time-value {
   min-width: 85px;
@@ -2640,7 +2638,7 @@ textarea.form-control-lg {
 .form-floating > .form-control:not(:placeholder-shown) ~ label,
 .form-floating > .form-control-plaintext ~ label,
 .form-floating > .form-select ~ label {
-  color: rgba(var(--bs-body-color-rgb), 0.65);
+  color: rgba(255,255,255, 0.65);
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
 .form-floating > .form-control:not(:-moz-placeholder-shown) ~ label::after {
@@ -2649,7 +2647,7 @@ textarea.form-control-lg {
   z-index: -1;
   height: 1.5em;
   content: "";
-  background-color: var(--bs-body-bg);
+  background-color: #212529;
   border-radius: var(--bs-border-radius);
 }
 .form-floating > .form-control:focus ~ label::after,
@@ -2661,7 +2659,7 @@ textarea.form-control-lg {
   z-index: -1;
   height: 1.5em;
   content: "";
-  background-color: var(--bs-body-bg);
+  background-color: #212529;
   border-radius: var(--bs-border-radius);
 }
 .form-floating > .form-control:-webkit-autofill ~ label {
