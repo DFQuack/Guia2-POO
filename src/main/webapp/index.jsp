@@ -20,7 +20,7 @@
     <a href="ejercicio1.jsp" class="btn menu">Ejercicio 1</a>
     <a href="#" class="btn menu">Ejercicio 2</a>
     <a href="#" class="btn menu">Ejercicio 3</a>
-    <a href="#" class="btn menu">Ejercicio 4</a>
+    <a href="ejercicio4.jsp" class="btn menu">Ejercicio 4</a>
     <a href="ejercicio5.jsp" class="btn menu">Ejercicio 5</a>
 </main>
 </body>
