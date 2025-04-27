@@ -4,6 +4,10 @@
 <%@ page import="java.sql.ResultSet" %>
 <%@ page import="java.sql.SQLException" %>
 <%
+    /*
+    * Ejercicio 5 hecho por Daniel Enrique Flores Lino.
+    * Última edición el 27/abril/2025
+    * */
     String sqlDatos = """
             SELECT c.id,a.id,c.nombres,c.apellidos,c.vip,a.marca,a.modelo,a.año,s.tipo,s.precio
             FROM cliente c

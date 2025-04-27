@@ -17,6 +17,10 @@
     <h2 class="display-6 text-center mb-4">Registrar servicio</h2>
 
     <%
+        /*
+         * Ejercicio 5 hecho por Daniel Enrique Flores Lino.
+         * Última edición el 27/abril/2025
+         * */
         String error = "";
         if (request.getAttribute("error") != null) {
             error = (String) request.getAttribute("error");

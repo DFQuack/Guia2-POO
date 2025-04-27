@@ -9,6 +9,10 @@ import java.sql.*;
 
 @WebServlet(name = "CarCleanServlet", urlPatterns = "/CarCleanServlet")
 public class CarCleanServlet extends HttpServlet {
+    /*
+     * Ejercicio 5 hecho por Daniel Enrique Flores Lino.
+     * Última edición el 27/abril/2025
+     * */
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //Valores obtenidos del formulario. Algunos se obtienen más abajo.
