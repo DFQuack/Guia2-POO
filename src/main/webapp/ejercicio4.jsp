@@ -1,3 +1,5 @@
+<!--hecho por Christian Javier Rosales Palacios RP241102 27/04/2025-->
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
