@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="CalculoVacaciones">
+    <output-path>[TuProyecto]/out/artifacts/CalculoVacaciones</output-path>
+    <root id="root" />
+  </artifact>
+</component>
